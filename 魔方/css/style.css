@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.wrapper {
+/*    height: 100%;*/
+    width: 600px;
+    height: 600px;
+    margin-left: 200px;
+    position: relative;
+    /*指定子元素定位在三维空间内*/
+    -webkit-transform-style: preserve-3d;
+    -webkit-perspective: 0px;
+    -moz-transform-style: preserve-3d;
+    -moz-perspective: 0px;
+}
+
+
+/*六个面的公共部分*/
+
+.box {
+    width: 306px;
+    height: 306px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -100px;
+    overflow: hidden;
+    /*        float: left;*/
+}
+
+
+/*六个面*/
+
+.wrapper .A {
+    /*竖着顺时针旋转90deg   向里走100px  形成右面*/
+    -webkit-transform: rotatey(90deg) translatez(-153px);
+    -moz-transform: rotatey(90deg) translatez(-153px);
+}
+
+.wrapper .B {
+    /*竖着顺时针旋转90deg   向外走100px  形成左面*/
+    -webkit-transform: rotatey(90deg) translatez(153px);
+    -moz-transform: rotatey(90deg) translatez(153px);
+}
+
+.wrapper .C {
+    /*形成上面*/
+    -webkit-transform: rotatex(90deg) translatez(153px);
+    -moz-transform: rotatex(90deg) translatez(153px);
+}
+
+.wrapper .D {
+    /* 形成下面*/
+    -webkit-transform: rotatex(90deg) translatez(-153px);
+    -moz-transform: rotatex(90deg) translatez(-153px);
+}
+
+.wrapper .E {
+    /*后面*/
+    -webkit-transform: translatez(-153px);
+    -moz-transform: translatez(-153px);
+}
+
+.wrapper .F {
+    /*钱面*/
+    -webkit-transform: translatez(153px);
+    -moz-transform: translatez(153px);
+}
+
+
+/*end  六个面*/
+
+
+/*小方块*/
+
+.box div {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    float: left;
+    border: 1px solid black;
+}
+
+.A div {
+    background-color: greenyellow;
+}
+
+.B div {
+    background-color: orange;
+}
+
+.C div {
+    background-color: yellow;
+}
+
+.D div {
+    background-color: blue;
+}
+
+.E div {
+    background-color: red;
+}
+
+.F div {
+    background-color: green;
+}
+
+
+/*end  小方块*/
+
+
+/*动画*/
+
+.animation_box {
+    /*name=box  time=5s  ease方式  无限循环*/
+    -webkit-animation: box 5s ease infinite;
+    -moz-animation: box 5s ease infinite;
+}
+
+@-webkit-keyframes box {
+
+     0% {
+            -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+        }
+        33.33% {
+            -webkit-transform: rotateX(360deg) rotateY(0deg) rotateZ(0deg);
+        }
+        66.66% {
+            -webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(0deg);
+        }
+        100% {
+            -webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+        }
+}
+
+@-moz-keyframes box {
+     0% {
+            -moz-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+        }
+        33.33% {
+            -moz-transform: rotateX(360deg) rotateY(0deg) rotateZ(0deg);
+        }
+        66.66% {
+            -moz-transform: rotateX(360deg) rotateY(360deg) rotateZ(0deg);
+        }
+        100% {
+            -moz-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+        }
+}
