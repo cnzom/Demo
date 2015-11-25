@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/*整体布局*/
+
+.wrapper {
+    width: 400px;
+    height: 230px;
+    margin: 200px auto;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+tr,
+td {
+    border: 2px solid black;
+}
+
+button {
+    width: 60px;
+    height: 40px;
+    font-weight: bolder;
+    font-size: 22px;
+    color: #FFF;
+    margin: 2px;
+    outline: none;
+    border-radius: 4px;
+}
+
+.answer {
+    width: 400px;
+    height: 40px;
+    line-height: 20px;
+    text-align: right;
+}
+
+
+/*整体布局 end */
+
+
+/*按钮*/
+
+.btn_num {
+    background-color: #5CB85C;
+    border-color: #4CAE4C;
+}
+
+.btn_sym {
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+
+.btn_tri {
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+
+.btn_sys {
+    background-color: #f0ad4e;
+    border-color: #eea236;
+}
+
+.btn_ok {
+    width: 120px;
+    height: 40px;
+}

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>计算器</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+<!--     <link rel="stylesheet" type="text/css" href="bootstrap.min.css"> -->
+</head>
+
+<body>
+    <div class="wrapper">
+        <table width="400" border="1">
+            <tbody>
+                <tr>
+                    <td colspan="6">
+                        <div class="answer">
+                            <p id="equations"></p>
+                            <p id="answerid">0</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="btn_num" onclick="process('7')">7</button>
+                    </td>
+                    <td>
+                        <button class="btn_num" onclick="process('8')">8</button>
+                    </td>
+                    <td>
+                        <button class="btn_num" onclick="process('9')">9</button>
+                    </td>
+                    <td>
+                        <button class="btn_sym" onclick="process('+')">＋</button>
+                    </td>
+                    <td>
+                        <button class="btn_tri" onclick="cos()">cos</button>
+                    </td>
+                    <td>
+                        <button class="btn_sys" onclick="off ()">关机</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="btn_num"  onclick="process('4')">4</button>
+                    </td>
+                    <td>
+                        <button class="btn_num"  onclick="process('5')">5</button>
+                    </td>
+                    <td>
+                        <button class="btn_num"  onclick="process('6')">6</button>
+                    </td>
+                    <td>
+                        <button class="btn_sym" onclick="process('-')">－</button>
+                    </td>
+                    <td>
+                        <button class="btn_tri" onclick="sin()">sin</button>
+                    </td>
+                    <td>
+                        <button class="btn_sys" onclick="del()">退格</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="btn_num"  onclick="process('1')">1</button>
+                    </td>
+                    <td>
+                        <button class="btn_num"  onclick="process('2')">2</button>
+                    </td>
+                    <td>
+                        <button class="btn_num"  onclick="process('3')">3</button>
+                    </td>
+                    <td>
+                        <button class="btn_sym" onclick="process('*')">×</button>
+                    </td>
+                    <td>
+                        <button class="btn_tri" onclick="tan()">tan</button>
+                    </td>
+                    <td>
+                        <button class="btn_sys" onclick="Eli()">清屏</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="btn_num"  onclick="process('0')">0</button>
+                    </td>
+                    <td>
+                        <button class="btn_num"  onclick="process('.')">·</button>
+                    </td>
+                    <td>
+                        <button class="btn_sym" onclick="process('-')">+/-</button>
+                    </td>
+                    <td>
+                        <button class="btn_sym" onclick="process('/')">÷</button>
+                    </td>
+                    <td colspan="2">
+                        <button class="btn_sym btn_ok" onclick="answered ()">=</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script type="text/javascript" src="Angel.js" id="angel"></script>
+</body>
+
+</html>
