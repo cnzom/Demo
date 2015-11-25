@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>听说要仿照好123？为毛哇？我仿个博客，不可以咩？哼唧哼唧~</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style-blue.css" id="thecol">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+
+<body onload="myTheme()">
+    <div class="container">
+        <!-- header -->
+        <nav class="navbar navbar-default" id="navbar-default_id">
+            <div class="container-fluid" id="container-fluid_id">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header" id="navbar-header_id">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Angel</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav" id="navbar-nav">
+                        <li class="active"><a href="#">首页 <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">留言板</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多分类 <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">相册</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Angel宝宝心情</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">成长岁月</a></li>
+                            </ul>
+                        </li>
+                        <!-- 主题选择 -->
+                        <li class="dropdown">
+                            <a  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">主题 <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#" onclick="blue()">
+                                        <div class="the_div" style="background-color: #337ab7"></div>经典的蓝色</a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="orange()">
+                                        <div class="the_div" style="background-color: #EC971F"></div>宝宝爱橙色</a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="green()">
+                                        <div class="the_div" style="background-color: #5CB85C"></div>猥琐的绿色</a>
+                                </li>
+                                <li>
+                                    <a href="#" onclick="red()">
+                                        <div class="the_div" style="background-color: #C9302C"></div>讨厌的红色</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- 主题选择 end  -->
+                    </ul>
+                    <form class="navbar-form navbar-right" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="乖宝宝是如何炼成的……">
+                        </div>
+                        <button type="submit" class="btn btn-default">搜索</button>
+                    </form>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <!-- header end-->
+        <!-- bodyer -->
+        <div class="bodyer ">
+            <div class="row">
+                <div class="left col-md-8  col-lg-8">
+                    <!-- 巨幕 -->
+                    <div class="jumbotron">
+                        <h1>乖宝宝~</h1>
+                        <p>据说，Angel是全世界最乖最乖的宝宝~</p>
+                        <p><a class="btn btn-primary btn-lg" href="#" role="button">更多内容</a></p>
+                    </div>
+                    <!--   巨幕  end -->
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">相册</h3>
+                        </div>
+                        <div class="panel-body">
+                            <!-- 缩略图 -->
+                            <div class="row">
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="thumbnail">
+                                        <img src="img/1.jpg" alt="1">
+                                        <div class="caption">
+                                            <h3>Thumbnail label</h3>
+                                            <p>...</p>
+                                            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 1 -->
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="thumbnail">
+                                        <img src="img/1.jpg" alt="1">
+                                        <div class="caption">
+                                            <h3>Thumbnail label</h3>
+                                            <p>...</p>
+                                            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 2 -->
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="thumbnail">
+                                        <img src="img/1.jpg" alt="1">
+                                        <div class="caption">
+                                            <h3>Thumbnail label</h3>
+                                            <p>...</p>
+                                            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 3 -->
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="thumbnail">
+                                        <img src="img/2.jpg" alt="2">
+                                        <div class="caption">
+                                            <h3>Thumbnail label</h3>
+                                            <p>...</p>
+                                            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 4 -->
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="thumbnail">
+                                        <img src="img/2.jpg" alt="2">
+                                        <div class="caption">
+                                            <h3>Thumbnail label</h3>
+                                            <p>...</p>
+                                            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 5 -->
+                                <div class="col-sm-6 col-md-4">
+                                    <div class="thumbnail">
+                                        <img src="img/2.jpg" alt="2">
+                                        <div class="caption">
+                                            <h3>Thumbnail label</h3>
+                                            <p>...</p>
+                                            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 6 -->
+                            </div>
+                            <!-- 缩略图  end -->
+                        </div>
+                    </div>
+                    <nav>
+                        <ul class="pager">
+                            <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
+                            <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="right col-md-3 col-md-offset-1  visible-md-block visible-lg-block">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">About</h3>
+                        </div>
+                        <div class="panel-body">
+                            <p>“人之初，性本善”，孩子在成长的过程中变坏到底是谁之过？全是孩子的“没出息”造成的吗？ 孩子本性纯良，变坏在很大程度上是受到了不当教育方式的影响，这来自于父母、学校、社会…… 在你感叹孩子学坏的时候，是否想到了其中的原因？</p>
+                            <p>~~所以~~本宝宝之所以很乖，是因为，有个非常，非常非常好麻麻~</p>
+                        </div>
+                    </div>
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">友情链接</h3>
+                        </div>
+                        <div class="panel-body mom">
+                            <p><a href="#">Angel相册</a></p>
+                            <p><a href="#">麻麻Blog</a></p>
+                            <p><a href="#">美丽的天堂</a></p>
+                            <p><a href="#">可爱的爷爷</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- body end-->
+            <!-- footer -->
+            <div class="footer"></div>
+            <script type="text/javascript" src="./js/Angel.js"></script>
+            <script type="text/javascript" src="./js/jquery-2.1.4.min.js"></script>
+            <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+            <script type="text/javascript">
+            $(".navbar-nav a").click(function(e) {
+                $(this).tab("show");
+            })
+            </script>
+</body>
+
+</html>

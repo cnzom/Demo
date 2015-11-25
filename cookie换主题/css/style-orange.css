@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.the_div {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    border: 1px solid #ddd;
+}
+
+
+/*强行更改bootstrap颜色~*/
+
+.navbar-default {
+    background-color: #EC971F !important;
+    border-color: #EC971F !important;
+}
+
+.navbar-default .navbar-brand {
+    color: #fff !important;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: #fff !important;
+    background-color: #D58512 !important;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff !important;
+}
+
+
+/*巨幕按钮*/
+
+.btn-primary {
+    background-color: #EC971F !important;
+    border-color: #D58512 !important;
+}
+
+.btn-primary:hover {
+    background-color: #D58512 !important;
+    border-color: #D58512 !important;
+}
+
+
+/*body 边框*/
+
+.panel-primary {
+    border-color: #EC971F !important;
+}
+
+
+/*body top*/
+
+.panel-primary>.panel-heading {
+    background-color: #EC971F !important;
+    border-color: #EC971F !important;
+}
+
+.pager a,
+.mom a{
+    color: #EC971F !important;
+    text-decoration: none;
+}
