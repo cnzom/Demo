@@ -1,0 +1,306 @@
+ body {
+     padding: 0;
+     margin: 0;
+ }
+ 
+ .wrapper {
+     margin: 100px 0 0 500px;
+ }
+ 
+ .ali {
+     position: relative;
+ }
+ /*耳廓*/
+ 
+ .ears {
+     position: absolute;
+     width: 50px;
+     height: 90px;
+     background-color: rgb(218, 37, 28);
+     border: 1px solid;
+     border-radius: 100px;
+     z-index: 0;
+ }
+ 
+ .ali .z_e {
+     transform: rotate(-35deg)
+ }
+ 
+ .ali .y_e {
+     transform: rotate(35deg);
+     left: 250px;
+ }
+ /*的内耳*/
+ 
+ .ali .n_ears {
+     position: absolute;
+     width: 30px;
+     height: 70px;
+     background-color: rgb(246, 226, 202);
+     border-radius: 100px;
+     z-index: 1;
+ }
+ 
+ .ali .z_ne {
+     left: 18px;
+     top: 22px;
+     transform: rotate(-35deg)
+ }
+ 
+ .ali .y_ne {
+     left: 255px;
+     top: 20px;
+     transform: rotate(35deg)
+ }
+ /*头*/
+ 
+ .head {
+     position: absolute;
+     width: 300px;
+     height: 220px;
+     background-color: rgb(218, 37, 28);
+     border: 1px solid;
+     border-top-left-radius: 400px 480px;
+     border-top-right-radius: 400px 480px;
+     border-bottom-left-radius: 300px 150px;
+     border-bottom-right-radius: 300px 150px;
+     box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.45);
+     z-index: 2;
+ }
+ 
+ .face {
+     position: absolute;
+     background-color: rgb(246, 226, 202);
+     width: 220px;
+     height: 150px;
+     border-top-left-radius: 300px 480px;
+     border-top-right-radius: 300px 480px;
+     border-bottom-left-radius: 300px 100px;
+     border-bottom-right-radius: 300px 100px;
+     top: 70px;
+     left: 38px;
+     z-index: 3;
+ }
+ /*眼睛*/
+ 
+ .eyes {
+     width: 14px;
+     height: 14px;
+     background: #000000;
+     border-radius: 7px;
+     position: absolute;
+     z-index: 4;
+     -webkit-animation: kaka 3s linear infinite;
+     -moz-animation: kaka 3s linear infinite;
+     -o-animation: kaka 3s linear infinite;
+     animation: kaka 3s linear infinite;
+ }
+ 
+ .ze {
+     top: 110px;
+     left: 100px;
+ }
+ 
+ .ye {
+     top: 110px;
+     left: 180px;
+ }
+ /*鼻子*/
+ 
+ .ali .nose {
+     width: 30px;
+     height: 25px;
+     border-radius: 15px;
+     background: #000000;
+     position: absolute;
+     top: 140px;
+     left: 130px;
+     z-index: 4;
+ }
+ /*鼻子上的高光*/
+ 
+ .ali .light {
+     position: absolute;
+     width: 10px;
+     height: 10px;
+     border-radius: 5px;
+     box-shadow: 19px 8px 5px #fff;
+     top: 138px;
+     left: 126px;
+     z-index: 5;
+ }
+ /*眉毛*/
+ 
+ .eyebrows {
+     width: 30px;
+     height: 300px;
+     border-top: 3px solid #333;
+     border-radius: 120px;
+     position: absolute;
+     z-index: 4;
+ }
+ 
+ .ey_z {
+     top: 95px;
+     left: 95px;
+ }
+ 
+ .ey_y {
+     top: 98px;
+     left: 176px;
+ }
+ /*脸上的红晕*/
+ 
+ .fred {
+     position: absolute;
+     width: 10px;
+     height: 10px;
+     border-radius: 5px;
+     box-shadow: 19px 8px 18px rgb(218, 37, 28);
+     z-index: 5;
+ }
+ 
+ .z_fr {
+     top: 148px;
+     left: 180px;
+ }
+ 
+ .y_fr {
+     top: 148px;
+     left: 70px;
+ }
+ 
+ .mouth {
+     position: absolute;
+     width: 40px;
+     height: 40px;
+     background: red;
+     z-index: 5;
+     border: 0 solid red;
+     border-radius: 100px;
+     top: 170px;
+     left: 126px;
+     -webkit-transform-origin: 50% 50%;
+     -webkit-animation: haha 1s linear infinite;
+     -moz--animation: haha 1s linear infinite;
+     -o-animation: haha 1s linear infinite;
+     animation: haha 1s linear infinite;
+ }
+ 
+ @-webkit-keyframes kaka {
+     10% {
+         margin: 0 0 0 0;
+     }
+     30% {
+         margin: -22px 0 0 0;
+     }
+     40% {
+         margin: -22px 0 0 5px;
+     }
+     60% {
+         margin: -22px 10px 0 0;
+     }
+     80% {
+         margin: -22px 0 0 0;
+     }
+     100% {
+         margin: 0 0 0 0;
+     }
+ }
+ 
+ @-moz-keyframes kaka {
+     10% {
+         margin: 0 0 0 0;
+     }
+     30% {
+         margin: -22px 0 0 0;
+     }
+     40% {
+         margin: -22px 0 0 5px;
+     }
+     60% {
+         margin: -22px 10px 0 0;
+     }
+     80% {
+         margin: -22px 0 0 0;
+     }
+     100% {
+         margin: 0 0 0 0;
+     }
+ }
+ 
+ @-o-keyframes kaka {
+     10% {
+         margin: 0 0 0 0;
+     }
+     30% {
+         margin: -22px 0 0 0;
+     }
+     40% {
+         margin: -22px 0 0 5px;
+     }
+     60% {
+         margin: -22px 10px 0 0;
+     }
+     80% {
+         margin: -22px 0 0 0;
+     }
+     100% {
+         margin: 0 0 0 0;
+     }
+ }
+ 
+ @-webkit-keyframes haha {
+     15% {
+         transform:scale(.8)
+     }
+     30% {
+        transform:scale(.5)
+     }
+     50% {
+         transform:scale(.2)
+     }
+     80% {
+        transform:scale(.5)
+     }
+     100% {
+        transform:scale(.8)
+     }
+
+ }
+ 
+ @-moz-keyframes haha {
+     15% {
+         transform:scale(.8)
+     }
+     30% {
+        transform:scale(.5)
+     }
+     50% {
+         transform:scale(.2)
+     }
+     80% {
+        transform:scale(.5)
+     }
+     100% {
+        transform:scale(.8)
+     }
+ }
+ 
+ @-o-keyframes haha {
+     15% {
+         transform:scale(.8)
+     }
+     30% {
+        transform:scale(.5)
+     }
+     50% {
+         transform:scale(.2)
+     }
+     80% {
+        transform:scale(.5)
+     }
+     100% {
+        transform:scale(.8)
+     }
+ }
