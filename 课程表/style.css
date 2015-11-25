@@ -1,0 +1,50 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#table{
+    border-collapse: collapse;
+    margin: 0px auto;
+    top: 200px;
+    position: relative;
+
+}
+
+#table,tr,td,th{
+    border: 1px solid royalblue;
+    text-align: center;
+}
+tr,td,th{
+    width: 80px;
+    height: 20px;
+}
+
+h3{
+    margin: auto;
+    color: darkorange;
+    padding: 20px;
+
+}
+
+.hang1{
+    background-color: antiquewhite;
+}
+
+.hang2{
+    background-color: greenyellow;
+}
+
+.s{
+    background-color: yellow;
+}
+
+
+
+.hang_s{
+    background-color: aquamarine;
+}
+
+.hang_d{
+    background-color: coral;
+}
+
